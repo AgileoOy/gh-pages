@@ -40,7 +40,7 @@ twitter_username: AgileoOy
 github_username:  AgileoOy
 
 # Build settings
-#theme: minima
+#theme: ga-hugo-theme
 plugins:
   - jekyll-feed
 

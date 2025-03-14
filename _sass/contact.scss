@@ -5,6 +5,7 @@
 }
 
 .contact-box {
+	flex-flow: wrap;
 	max-width: 750px;
 	margin: 0 auto;
 
@@ -17,10 +18,7 @@
 	}
 
 	.contact-form, .contact-details  {
-		@media #{$desktop} {
-			-webkit-flex: 1;
-			flex: 1;
-		}
+		margin: 0 30px;
 	}
 
 	.contact-details {

@@ -1,9 +1,19 @@
 .nav-open nav {
+
 	border-bottom: 1px dotted rgba(255, 255, 255, .2);
 	padding: 10px 0;
 	a {
 		display: block;
 	}
+
+	@media (min-width: 992px) {
+		border: 0;
+		padding: 0 20px;
+
+		a {
+			display: inline;
+		}
+	}	
 }
 
 nav {
@@ -11,7 +21,14 @@ nav {
 	font-size: .8em;
 	width: 100%;
 
-
+	@media (min-width: 992px) {
+		text-align: right;
+		position: absolute;
+		top: 13px;
+		right: 0;
+		padding: 0 20px;
+	}
+	
 	a {
 		margin: 0 3px;
 		padding: 20px 10px;
@@ -20,7 +37,10 @@ nav {
 		transition: .2s ease-in-out;
 		display: none;
 
-
+		@media (min-width: 992px) {
+			display: inline;
+			padding: 10px;
+		}
 
 		&.nav-toggle {
 			display: inline;
@@ -30,6 +50,9 @@ nav {
 			font-size: 1.9em;
 			border: 0;
 
+			@media (min-width: 992px) {
+				display: none;
+			}
 
 			&:hover {
 				border: 0;
@@ -43,6 +66,17 @@ nav {
 		color: #fff;
 	}
 
+	@media (min-width: 992px) {
+		a.highlight {
+			border: 1px #ccc solid;
+			border-radius: 5px;
+
+			&:hover {
+				background: #fff;
+				color: #338cc0;
+			}
+		}
+	}
 
 	a.active {
 		color: #fff;

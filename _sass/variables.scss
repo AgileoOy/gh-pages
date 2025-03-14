@@ -4,4 +4,5 @@ $middle-gradient-color: linear-gradient(to right, black, blue 25%, blue 75%, bla
 
 // Breakpoints
 $mid-point: "(min-width: 620px)";
-$desktop: "(min-width: 768px)";
+$desktop: "(min-width: 768px)" !default;
+$large-desktop: "(min-width: 1024px)";
