@@ -3,7 +3,7 @@
 	margin: 10px;
 	padding: 0;
 
-	@media (min-width: 992px) {
+	@media (min-width: 991px) {
 		-webkit-flex: 1 0 180px;
 		flex: 1 0 180px;
 	}
@@ -70,21 +70,24 @@ footer {
 	padding: 50px 0 50px 0;
 	font-size: 1.1em;
 	position: relative;
-	background: #142E4F;
+	background: #99C6E045;
 	color: #fff;
 
 	.copyright {
+		text-align: center;
+		color: #333;
+		background-color: #fff;
 		font-size: .8em;
 		margin: 0 auto;
 
 		@media (max-width: 992px) {
-			text-align: center;
+			text-align: left;
 		}
 	}
 	
 	&,
 	a {
-		color: #999;
+		color: #666;
 	}
 
 	h2 {
@@ -101,7 +104,7 @@ footer {
 		text-decoration: none;
 
 		&:hover {
-			color: #fff;
+			color: #666;
 		}
 	}
 
@@ -109,7 +112,6 @@ footer {
 		width: 100%;
 		padding: 30px 0;
 		margin: 0;
-		background-color: #222527;
 
 		a {
 			font-weight: 600;

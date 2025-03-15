@@ -1,12 +1,20 @@
-- name: Pricing
+- name: Solutions.
   link: /pricing/
   new_window: false
   highlight: false
-- name: About
+- name: Products.
   link: /about/
   new_window: false
   highlight: false
-- name: Contact
+- name: Support.
+  link: /support/
+  new_window: false
+  highlight: false
+- name: Company.
+  link: /company/
+  new_window: false
+  highlight: false
+- name: Contact.
   link: /contact/
   new_window: false
   highlight: false

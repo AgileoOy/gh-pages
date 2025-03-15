@@ -25,16 +25,15 @@
 	<body>
 		<header>
 			<div>
-				<div class="navbar-brand mr-auto company-name fixed-top"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="Agileo Logo" width="95" height="33" /></a></div>
 				{% include navigation.html %}
 			</div>
 		</header>
 		{{ content }}
-		<footer>
+		<footer class="py-4">
 			<div class="container">
-				<div class="footer-columns">
+				<div class="row footer-columns">
 					{% for column in site.data.footer %}
-					<ul class="footer-links">
+					<ul class="col-md-4 footer-links">
 						{% for link in column.links %}
 							<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
 								{% if link.social_icon %}

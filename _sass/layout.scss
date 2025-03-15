@@ -1,7 +1,8 @@
 .container, .text-container {
-	margin: 0 auto;
+	padding-top: 100px;
+	margin: 110 auto;
 	position: relative;
-	padding: 0 20px;
+	padding: 110 120px;
 }
 
 .text-container {
@@ -35,7 +36,7 @@ header {
 	}
 
 	.company-name {
-		z-index: 100;
+		z-index: 1;
 		font-size: 1.7em;
 		line-height: 0;
 
@@ -51,7 +52,7 @@ header {
 }
 
 .content {
-	margin-top: 50px;
+	padding-top: 170px;
 	background: #fff;
 	padding: 1px 0 0 0;
 	position: relative;
@@ -140,6 +141,7 @@ blockquote:before {
 }
 
 .page {
+	margin-top: 80;
 	margin-bottom: 0;
 	padding-bottom: 80px;
 }
