@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-inverse fixed-top">
-	<a class="navbar-brand company-name" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="Agileo Logo" width="268" height="101" /></a>
-	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	<a class="navbar-brand" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="Agileo Logo" width="268" height="101" /></a>
+	<button class="navbar-toggler justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon">&nbsp;</span>
 	</button>
-	<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-		<ul class="navbar-nav">
+	<div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+		<ul class="navbar-nav mx-auto">
 			<li class="nav-item">
 			{% for link in site.data.navigation %}
 				{% assign class = "" %}
@@ -15,7 +15,7 @@
 				{% if link.link == page.url %}
 					{% assign class = class | append: " active" %}
 				{% endif %}
-				<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
+				<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" aria-current="page" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
 			{% endfor %}
 			</li>
 		</ul>

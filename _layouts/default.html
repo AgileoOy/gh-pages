@@ -27,25 +27,30 @@
 			<div>
 				{% include navigation.html %}
 			</div>
+			<div>
+				{% include carousell.html %}
+			</div>
 		</header>
 		{{ content }}
-		<footer class="py-4">
-			<div class="container">
+		<footer class="text-center text-lg-start">
+			<div class="container p-4">
 				<div class="row footer-columns">
 					{% for column in site.data.footer %}
-					<ul class="col-md-4 footer-links">
-						{% for link in column.links %}
-							<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
-								{% if link.social_icon %}
-									{% include social-icon.html icon=link.social_icon %}
-								{% endif %}
-								{{ link.name }}</a></li>
-						{% endfor %}
-					</ul>
+					<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+						<ul class="footer-links">
+							{% for link in column.links %}
+								<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
+									{% if link.social_icon %}
+										{% include social-icon.html icon=link.social_icon %}
+									{% endif %}
+									{{ link.name }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
 					{% endfor %}
 				</div>
-				<p class="copyright">&copy; {{ site.time | date: '%Y' }} Agileo • <a href="#">Terms</a> &amp; <a href="#">Privacy</a> • <a href="https://agileo.fi/">Agileo</a></p>
 			</div>
+			<div class="copyright">&copy; {{ site.time | date: '%Y' }} Agileo • <a href="#">Terms</a> &amp; <a href="#">Privacy</a> • <a href="https://agileo.fi/">Agileo</a></div>
 		</footer>
 	</body>
 </html>

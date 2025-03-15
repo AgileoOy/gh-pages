@@ -67,20 +67,23 @@
 }
 
 footer {
-	padding: 50px 0 50px 0;
+	padding: 50px 0 0 0;
 	font-size: 1.1em;
 	position: relative;
 	background: #99C6E045;
 	color: #fff;
 
 	.copyright {
+		width: 100%;
 		text-align: center;
 		color: #333;
 		background-color: #fff;
-		font-size: .8em;
+		font-size: .9em;
 		margin: 0 auto;
 
 		@media (max-width: 992px) {
+			padding: 50px 0px 50px 50px;
+			vertical-align: middle;
 			text-align: left;
 		}
 	}

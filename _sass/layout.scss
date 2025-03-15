@@ -1,8 +1,7 @@
 .container, .text-container {
-	padding-top: 100px;
-	margin: 110 auto;
+	padding: 50px 0 0 0;
+	margin: 10 auto;
 	position: relative;
-	padding: 110 120px;
 }
 
 .text-container {
@@ -20,12 +19,12 @@
 
 header {
 	color: #fff;
-	padding: 20px 0;
 	background: #338cc0; /* Old browsers */
 	background: linear-gradient(to bottom, #338cc0 0%, #99c6e0 100%) no-repeat #338cc0;
 
 	a {
-		color: #fff;
+		text-align: right;
+		color: #333;
 		text-decoration: none;
 		z-index: 1;
 		position: relative;
@@ -52,10 +51,7 @@ header {
 }
 
 .content {
-	padding-top: 170px;
-	background: #fff;
-	padding: 1px 0 0 0;
-	position: relative;
+	padding: 100px 0 0 0;
 }
 
 .screenshot{
